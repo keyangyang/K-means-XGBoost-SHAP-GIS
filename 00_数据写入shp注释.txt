@@ -1,0 +1,14 @@
+#01_BasinATLAS5
+为所有流域的shp文件，每个流域单独一个shp文件
+
+#02_csv
+包含需要写入的所有csv文件
+
+#03_写入shp文件.ipynb
+将计算结果（水文变量和归因结果）写入shp文件的脚本；
+写入时是按照BasinATLAS5文件夹里的shp文件名写入的，也就是CSV文件中的Filename列与shp文件名对应；
+写入完成后，保存为一个总的shp文件，包含所有的子流域
+
+#04_shp_results
+脚本运行后保存的shp文件
+

@@ -1,0 +1,5 @@
+#01_TrendsDataProcessing.ipynb
+Used to calculate the annual averages of global variables like P, ET, R, n, etc., for plotting global trend charts.
+
+#02_SpatialDataProcessingAndWriting.ipynb
+Used to calculate spatial values of various variables for global watersheds (including elasticity, change amount, change rate, runoff changes caused by each variable, and attribution over the last 30 years), for plotting global trend charts.

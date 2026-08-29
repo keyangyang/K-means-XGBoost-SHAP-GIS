@@ -1,0 +1,10 @@
+#01_BasinATLAS5
+Shapefiles for all watersheds, with a separate shapefile for each watershed
+
+#02_csv
+Contains all the CSV files that need to be written
+
+#03_Write_shp_file.ipynb
+A script to write calculation results (hydrological variables and attribution results) into shapefiles;
+The writing is done according to the shapefile names in the BasinATLAS5 folder, meaning the Filename column in the CSV matches the shapefile names;
+After writing, a single shapefile containing all sub-watersheds is saved

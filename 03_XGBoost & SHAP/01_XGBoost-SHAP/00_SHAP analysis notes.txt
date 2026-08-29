@@ -1,0 +1,8 @@
+#01_All_data.csv
+All variable feature data for SHAP analysis (no clustering, analyzing all watersheds);
+Includes 14 independent variables and one dependent variable;
+Independent variables include Watershed Area (Area), Absolute Latitude (LAT), Compound Topographic Index (CTI), Slope, Elevation, River Density (River), Leaf Area Index (LAI), Wind Speed (Speed), Solar Radiation (Srad), Soil Moisture (SW), Clay, Silt, Sand, Human CO2 Emissions (CO2);
+Dependent variable is the watershed characteristic parameter (n)
+
+#02_XGBoost-SHAP.ipynb
+Code for implementing SHAP analysis, including (1) feature importance ranking, (2) main effects and interaction effects

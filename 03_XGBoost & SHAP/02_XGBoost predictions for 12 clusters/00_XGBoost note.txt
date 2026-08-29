@@ -1,0 +1,57 @@
+#01_12_clusters_data  
+Based on the data of 12 watershed clusters after K-means clustering, each cluster has its own separate CSV file.  
+
+#02_XGBoost-opt-p.ipynb  
+The XGBoost prediction model that requires tuning hyperparameters for each cluster. When predicting for each cluster, make sure to modify the input file path, hyperparameters, and output file path.  
+
+#03_12_clusters_p  
+Output folder for the XGBoost prediction model, with each cluster having its own separate CSV file.  
+
+The hyperparameters for the 12 clusters are as follows:
+1
+opt_xgb=XGBRegressor(colsample_bytree=0.8, learning_rate=0.1, max_depth=8, n_estimators=200, reg_alpha=0.5, reg_lambda=0.5, subsample=0.6)
+opt_xgb.fit(x_train, y_train)
+
+2
+opt_xgb=XGBRegressor(colsample_bytree=0.8, learning_rate=0.1, max_depth=10, n_estimators=200, reg_alpha=0.1, reg_lambda=0.1, subsample=0.8)
+opt_xgb.fit(x_train, y_train)
+
+3
+opt_xgb=XGBRegressor(colsample_bytree=0.8, learning_rate=0.1, max_depth=10, n_estimators=100, reg_alpha=0, reg_lambda=0.1, subsample=1.0)
+opt_xgb.fit(x_train, y_train)
+
+4
+opt_xgb=XGBRegressor(colsample_bytree=0.6, learning_rate=0.3, max_depth=8, n_estimators=100, reg_alpha=0.1, reg_lambda=0, subsample=1.0)
+opt_xgb.fit(x_train, y_train)
+
+5
+opt_xgb=XGBRegressor(colsample_bytree=1.0, learning_rate=0.1, max_depth=12, n_estimators=200, reg_alpha=0.1, reg_lambda=0, subsample=0.8)
+opt_xgb.fit(x_train, y_train)
+
+6
+opt_xgb=XGBRegressor(colsample_bytree=0.8, learning_rate=0.1, max_depth=10, n_estimators=200, reg_alpha=0, reg_lambda=0.1, subsample=0.6)
+opt_xgb.fit(x_train, y_train)
+
+7
+opt_xgb=XGBRegressor(colsample_bytree=1.0, learning_rate=0.1, max_depth=6, n_estimators=200, reg_alpha=0, reg_lambda=0, subsample=0.8)
+opt_xgb.fit(x_train, y_train)
+
+8
+opt_xgb=XGBRegressor(colsample_bytree=0.8, learning_rate=0.1, max_depth=12, n_estimators=200, reg_alpha=0.1, reg_lambda=0.1, subsample=0.8)
+opt_xgb.fit(x_train, y_train)
+
+9
+opt_xgb=XGBRegressor(colsample_bytree=0.8, learning_rate=0.1, max_depth=10, n_estimators=200, reg_alpha=0, reg_lambda=1.0, subsample=0.6)
+opt_xgb.fit(x_train, y_train)
+
+10
+opt_xgb=XGBRegressor(colsample_bytree=0.8, learning_rate=0.1, max_depth=8, n_estimators=200, reg_alpha=0.1, reg_lambda=0.1, subsample=0.8)
+opt_xgb.fit(x_train, y_train)
+
+11
+opt_xgb=XGBRegressor(colsample_bytree=1.0, learning_rate=0.1, max_depth=12, n_estimators=200, reg_alpha=0.1, reg_lambda=0.1, subsample=0.8)
+opt_xgb.fit(x_train, y_train)
+
+12
+opt_xgb=XGBRegressor(colsample_bytree=1.0, learning_rate=0.1, max_depth=12, n_estimators=200, reg_alpha=0.1, reg_lambda=0, subsample=0.8)
+opt_xgb.fit(x_train, y_train)
